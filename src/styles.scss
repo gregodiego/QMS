@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+//@import "~node_modules/@scania/grid/dist/scss/grid";
+@import "~node_modules/@scania/typography/dist/scss/mixins";
+@import "~node_modules/@scania/typography/dist/scss/tokens";
+@import "~node_modules/@scania/colour/dist/scss/colour";
+
+$footer-height: 194px;
+$footer-heights: 68px;
+html,
+body,
+app-root {
+  height: 100%;
+  overflow: hidden;
+}
+
+.sdds-container {
+  background-color: #e5e5e5;
+  padding-bottom: 157px;
+  //min-height: calc(100% - #{$footer-height} - var(--sdds-header-height));
+  min-height: calc(100% - #{$footer-height});
+}
+.sdds-sidebar {
+  height: 100%;
+  //min-height: calc(100% - var(--sdds-header-height) - #{$footer-heights});
+}
+.sdds-content-push {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+.subheadline {
+  @include type-style("paragraph-02");
+  font-weight: 400;
+  margin-top: var(--sdds-spacing-element-8);
+  margin-bottom: 0;
+}
+.sdds-headline-02 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer {
+  justify-content: center;
+  background-color: get-colour(blue-900);
+  margin: 0px;
+  height: $footer-height;
+  display: flex;
+  align-items: center;
+}
+.sdds-footer {
+}
+.space-element-16 {
+  margin-top: var(--sdds-spacing-layout-16);
+}
+.space-element-20 {
+  margin-top: var(--sdds-spacing-element-20);
+}
+.space-element-24 {
+  margin-top: var(--sdds-spacing-layout-24);
+}
+.space-element-64 {
+  margin-top: var(--sdds-spacing-layout-64);
+}
+.sdds-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+}
+/* //for bigger size
+@media(min-width: 576px) {
+  
+ 
+}
+ */

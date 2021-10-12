@@ -1,0 +1,17 @@
+.sdds-navbar-menu-item-dropdown {
+  &.opened {
+    background: var(--sdds-nav-item-dropdown-background-active);
+    color: var(--sdds-nav-item-dropdown-colour-active);
+  }
+}
+@media (min-width: 992px) {
+  .sdds-navbar .sdds-navbar-collapsible,
+  .sdds-navbar .sdds-navbar-side-menu {
+    top: 0px !important;
+  }
+}
+@media (max-width: 992px) {
+  #side-menu {
+    visibility: hidden !important;
+  }
+}

@@ -1,0 +1,37 @@
+.sdds-navbar-menu-item-dropdown {
+  &:hover,
+  &.hover {
+    background: var(--sdds-nav-item-background-selected);
+  }
+
+  &.opened {
+    background: var(--sdds-nav-item-dropdown-background-active);
+    color: var(--sdds-nav-item-dropdown-colour-active);
+  }
+}
+.sdds-navbar-menu-item-bottom {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  background-color: var(--sdds-white);
+  margin-top: 26px;
+}
+.tool-tip {
+  display: block;
+}
+// should be removed when side-menu fixed
+.sdds-sidebar-collapse .sdds-navbar-menu-item-bottom {
+  width: 68px !important;
+}
+.sdds-navbar-menu-item-dropdown.active {
+  border-left: 4px solid var(--sdds-nav-item-border-active);
+}
+.sdds-navbar-menu-item-dropdown .sdds-navbar-menu-item-dropdown-parent {
+  border-left: 4px solid transparent;
+}
+.sdds-navbar-menu-item-dropdown.active .sdds-navbar-menu-item-dropdown-parent {
+  border-left: 0px;
+}
+.sdds-navbar-menu-item-dropdown-parent {
+  padding-left: 20px !important;
+}

@@ -1,0 +1,19 @@
+<sdds-theme name="scania"></sdds-theme>
+<div class="sdds-navbar-overlay" [ngClass]=" { 'expanded' : isExpanded }"></div>
+<app-header (onMobile)="expand($event)"></app-header>
+<div class="sdds-push">
+    <app-side-menu [isExpanded]="isExpanded" (onItemExist)="itemHeight($event)"></app-side-menu>
+    <div class="sdds-content-push">
+        <div class="sdds-container-push-fluid sdds-container">
+            <div class="sdds-row">
+                <div class="space-top no-padding sdds-col-max-12 sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-12 sdds-col-md-12 sdds-col-sm-12"
+                    style="padding-top:54px">
+
+
+                </div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <app-footer></app-footer>
+    </div>
+</div>

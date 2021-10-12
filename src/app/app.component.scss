@@ -1,0 +1,16 @@
+/* .sdds-container {
+  margin-top: var(--sdds-header-height);
+} */
+.container-side-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.sdds-push {
+  padding-top: var(--sdds-header-height);
+  height: 100%;
+}
+.sdds-content-push {
+  overflow: auto;
+  //max-height: 100%;
+}
